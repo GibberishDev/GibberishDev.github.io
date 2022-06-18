@@ -57,10 +57,16 @@ div.theme-red {
   border-color: var(--color-tf2-dark-gray-red);
 }
 
-div.test {
-  height: calc(100vh - 68px); /* 68 cos 64px is top ribbon and 4 additional is border. Remmember it finally, dumbass */
-  width: 85vw;
+div.wrapper {
+  max-height: calc(100vh - 68px); /* 68 cos 64px is top ribbon and 4 additional is border. Remmember it finally, dumbass */
+  max-width: 85vw;
   margin: auto;
+
+  overflow-y: auto;
+}
+
+div.test {
+  height: 200vh;
   background-color: var(--color-tf2-blu);
   border-left: 4px solid var(--color-tf2-light-blu);
   border-right: 4px solid var(--color-tf2-light-blu);
