@@ -5,13 +5,29 @@
 </head>
 <body class="theme-blu">
     <div class="top-ribbon theme-blu">
-
+<button onclick="toggleTeam()" class="team-btn theme-blu"></button>
     </div>
     <div id="wrapper" class="section theme-blu">
         <div class="content-frame theme-blu">
-
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore rerum vero quidem fuga, modi consectetur minus cupiditate? Rem vel inventore ullam reprehenderit iusto qui magnam hic maiores natus laudantium!
+            
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid aperiam ad corrupti adipisci excepturi eos, possimus natus officiis suscipit ea consectetur! Perferendis, quas molestias. Voluptatem deleniti nihil possimus voluptates?
+            
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum debitis esse repellat fuga. Nobis facilis dicta dolor ad voluptates omnis debitis. Debitis corporis, quos ratione reprehenderit fugiat eaque modi.
+            
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus voluptatibus obcaecati, magni accusantium ipsa. Tempora magnam dolores, ipsa expedita molestiae aut quisquam ratione neque quo excepturi, quidem sed voluptatibus?
+            
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corrupti! Vel inventore quas molestiae sit culpa incidunt illo asperiores, nisi quibusdam possimus, placeat soluta assumenda. Cum unde commodi minima modi?
         </div>
 
     </div>
 
+    <script>
+        function toggleTeam() {
+           var blu = document.querySelectorAll('.theme-blu');
+           for (const red of blu) {
+                red.classList.toggle("theme-red");
+            }
+        }
+    </script>
 </body>

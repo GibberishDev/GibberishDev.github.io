@@ -21,14 +21,16 @@ body {
   margin: 0px;
   background-image: url(../resources/ambassador_silhouette.png);
   animation-name: background;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  transition-duration: 0.25s;
 }
 
 body.theme-blu{
   background-color: var(--color-tf2-blu);
 }
+
 body.theme-red{
   background-color: var(--color-tf2-red);
 }
@@ -37,7 +39,7 @@ body.theme-red{
       background-position: 0px 0px;
   }
   100% {
-      background-position: 1024px 406px;
+      background-position: 768px 278px; /* size of background image (currently ../resources/ambassador_silhouette.png) */
   }
 }
 
@@ -46,6 +48,7 @@ div.top-ribbon {
   width: 100vw;
   padding: 0%;
   border-bottom: 4px solid;
+  transition-duration: 0.25s;
 }
 
 div.theme-blu {
@@ -58,13 +61,14 @@ div.theme-red {
 }
 
 #wrapper {
-  height: calc(100vh - 68px); /* 68 cos 64px is top ribbon and 4 additional is border. Remmember it finally, dumbass */
+  height: calc(95vh - 68px); /* 68 cos 64px is top ribbon and 4 additional is border. Remmember it finally, dumbass */
   width: 85vw;
   margin: auto;
 
   overflow-y: auto;
   scrollbar-gutter: stable;
   background-color: transparent;
+  transition-duration: 0.125s;
 }
 
 
@@ -94,14 +98,51 @@ div.theme-red {
     border-radius: 20px;
 }
 
-div.content-frame.theme-blu {
+div.content-frame {
   height: 120%;
-  background-color: var(--color-tf2-dark-blu);
   scrollbar-width: thin;
+  transition-duration: 0.125s;
+  border-left: 4px;
+}
+
+div.content-frame.theme-blu {
+  background-color: var(--color-tf2-dark-blu);
+  border-color: var(--color-tf2-gray-blu);
+
 }
 div.content-frame.theme-red {
-  height: 120%;
   background-color: var(--color-tf2-dark-red);
+  border-color: var(--color-tf2-gray-red);
+}
 
-  scrollbar-width: thin;
+button.team-btn {
+  border: 0px;
+  width: 48px;
+  height: 48px;
+  margin-top: 8px;
+  margin-left: calc(100vw - 64px);
+  transition-duration: 0.25s;
+  background-color: transparent;
+  background-image: url(../resources/red-logo.svg);
+  background-size: 48px 48px;
+}
+
+button.team-btn:hover{
+  border: 0px;
+  width: 64px;
+  height: 64px;
+  margin-top: 0px;
+  margin-left: calc(100vw - 72px);
+  transition-duration: 0.25s;
+  background-color: transparent;
+  background-size: 64px 64px;
+}
+
+button.theme-blu{
+  background-image: url(../resources/red-logo.svg);
+
+}
+
+button.theme-red{
+  background-image: url(../resources/blu-logo.svg);
 }
