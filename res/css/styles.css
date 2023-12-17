@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "NovaSquareRegular";
+  src: url("../fonts/novasquare-regular-webfont.woff") format("woff");
+}
+* {
+  margin: 0;
+  color: #fff3a5;
+  font-family: "NovaSquareRegular";
+  overflow-y: auto;
+  scrollbar-color: #a05611 #210d1d;
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: #19002c;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  background-color: #210d1d;
+  min-height: max(5%, 32px);
+}
+
+#wrapper {
+  flex-grow: 1;
+}
+
+#footer {
+  min-height: max(15%, 72px);
+  background-color: #210d1d;
+}/*# sourceMappingURL=styles.css.map */

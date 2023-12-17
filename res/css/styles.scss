@@ -1,0 +1,49 @@
+// COLOURS
+//Pallete #fff3a5 #f4e063 #de923a #a05611 #532b0b #2d1604 #210d1d #19002c
+$clr_primary:#19002c;
+$clr_dark:#210d1d;
+$clr_d_text:#2d1604;
+$clr_secondary:#a05611;
+$clr_accent:#de923a;
+$clr_light:#f4e063;
+$clr_text:#fff3a5;
+
+// FONT FAMILIES
+@font-face {
+  font-family: 'NovaSquareRegular';
+  src: url('../fonts/novasquare-regular-webfont.woff') format('woff');
+}
+
+// FONTS
+$font_primary: 'NovaSquareRegular';
+
+// Styling
+* {
+  margin: 0;
+  color: $clr_text;
+  font-family: $font_primary;
+  overflow-y: auto;
+  scrollbar-color: $clr_secondary $clr_dark;
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: $clr_primary;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  background-color: $clr_dark;
+  min-height: max(5%, 32px);
+}
+
+#wrapper {
+  flex-grow: 1;
+}
+
+#footer {
+  min-height: max(15%, 72px);;
+  background-color: $clr_dark;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pure CSS</title>
+  <link rel="icon" href="assets/css.svg">
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="sidebar-button-container">
+      <input type="checkbox" id="sidebar-button-checkbox">
+        <div class="sidebar-button-bar sidebar-button-bar-1"></div>
+        <div class="sidebar-button-bar sidebar-button-bar-2"></div>
+        <div class="sidebar-button-bar sidebar-button-bar-3"></div>
+        <div id="sidebar">
+          <div class="sidebar-link-title">Навигация по сайту:</div>
+          <a tabindex="-1"  class="sidebar-link page" href="index.html">Главная страница</a>
+          <a tabindex="-1"  class="sidebar-link page" href="index2.html">Приципы</a>
+          <a tabindex="-1"  class="sidebar-link page-current" href="index3.html">Минусы</a>
+          <div class="sidebar-link-title">Навигация по странице:</div>
+          <a tabindex="-1"  class="sidebar-link subpage" href="#page-sublink-settings">Настройки</a>
+          <a tabindex="-1"  class="sidebar-link subpage" href="#page-sublink-elements">Новые элементы</a>
+          <a tabindex="-1"  class="sidebar-link subpage" href="#page-sublink-support">Поддержка</a>
+        </div>
+      </input>
+    </div>
+    <div style="flex-grow: 1;text-align: right; margin-right: 2rem;">Навигация</div>
+    <div id="site-title" >Pure CSS</div>
+  </div>
+  <div id="wrapper">
+    <div id="content">
+      <div id="fancy-title">
+        <div id="fancy-title-text">Минусы</div>
+        <div id="grid-container">
+          <div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div><div class="grid-fill"></div>
+        </div>
+      </div>
+      <div id="text-grid">
+        <hr class="grid-fill-all">
+        <span class="grid-fill-all">
+          <p>Хоть CSS может многое, но так как это всего лишь язык описания параметров, логические выражения, методы и сложные изменения всё же остаются привилегией JavaScript. На этой странице будут описаны те вещи, которые невозможно достичь или слишком сложны и ресурсоёмки без использования JavaScript.</p>
+        </span>
+        <span class="grid-fill-12 paragraph-title" id="page-sublink-settings">Пользовательские Настройки</span>
+        <span class="grid-fill-12">
+          <p>Хороший сайт не только информативный, но оставляет у пользователя желание вернуться посмотреть его снова. А если это вообще сайт какой-либо организации/сервиса куда пользователь заходит множество раз (сайт налоговой службы или социальной сети являются хорошими примерами), то желательно иметь настройки или авторизацию. Эти вещи невозможно получить не используя JavaScript. Все параметры, которые пользователь изменяет под себя, сохраняются локально или отправляются на сервер. В большинстве своём сайты организаций не могут обойтись без сбора данных. Здесь CSS бессилен.</p>
+        </span>
+        <span class="grid-fill-3">
+          <img src="assets/settings.png">
+        </span>
+        <span class="grid-fill-23 paragraph-title" id="page-sublink-elements">Новые элементы</span>
+        <span class="grid-fill-1">
+          <img src="assets/new-elements.png">
+        </span>
+        <span class="grid-fill-23">
+          <p>
+            Зачастую пользователь желает получить информацию, которая имеет отношение к его ситуации. Здесь от сайта зачастую требуется генерировать новые элементы и текст. Разработчик может записать МНОЖЕСТВО исходов и показывать их используя разные хитрости. Это один из способов, но работодатель/заказчик такому будет очень не рад. Сайт будет лагать, медленно грузится и весить много.
+          </p>
+          <p>
+            Тут на помощь приходит всё тот же JavaScript. Внутри кода можно находу генерировать новые элементы HTML и CSS. Помимо новых элементов JavaScript может создавать всплывающие диалоговые окна, изменять содержимое сайта на стадии первой загрузки или запускать целые методы, которы могут превратить браузер в 3D пространство с игровой логикой. Возможности ограничены только производительностью и фантазией.
+          </p>
+        </span>
+        <span class="grid-fill-12 paragraph-title" id="page-sublink-support">Адаптируемость и поддержка</span>
+        <span class="grid-fill-12">
+          <p>CSS по своей натуре работает только потому, что браузеры включают в себя код, который обрабатывает параметры в CSS и применяет их на странице. Это влечёт за собой последствия в виде того, что многие браузеры могут не поддерживать некоторые теги или параметры. Среди самых ограничивающих браузеров можно отметить Mozilla Firefox. Этот браузер имеет отдельный движок, который отличается от большинства. Большое количество браузеров имеет движок Chromium и так или иначе поддерживает те же методы. Разработчику нужно постоянно смотреть как вебсайт выглядит на всех браузерах. Тут помогают вебсайты наподобие caniuse.com</p>
+        </span>
+        <span class="grid-fill-3">
+          <img src="assets/support.png">
+        </span>
+        <hr class="grid-fill-all">
+      </div>
+    </div>
+    <div id="footer">
+      <div>Copyright 2022 GibbDev (Max Alfimenko)</div>
+      <div>Licence GPL v3.0</div>
+      <a tabindex="-1" href="https://github.com/GibberishDev" class="github-link" target="_blank">My GithubPage</a>
+      <div id="gdgraph">
+        <div id="gdgraph-antena"></div>
+        <div id="gdgraph-container" aria-hidden="true" class="crt">
+          <div id="gdgraph-text">
+            <span class="top">GD</span>
+            <span class="mid">GD</span>
+            <span class="bot">GD</span>
+          </div>
+        </div>
+        <div id="gdgraph-pegs"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  :root {
+    --bg-color-10: #050507;
+    --bg-color-50: #101015;
+    --bg-color-100: #202030;
+    --bg-color-200: #404060;
+    --bg-color-300: #606090;
+    --bg-color-400: #8080c0;
+    --bg-color-500: #a0a0f0;
+    --bg-color-600: #c0c0ff;
+
+    --bg-gradient: linear-gradient(90deg, red 0%, rgba(169,0,240,1) 25%, rgba(80,0,209,1) 50%, rgba(169,0,240,1) 75%, red 100%);
+    --bg-gradient-50: linear-gradient(90deg, rgba(255, 0, 0, .5) 0%, rgba(169,0,240,.5) 25%, rgba(80,0,209,.5) 50%, rgba(169,0,240,.5) 75%, rgba(255, 0, 0, .5) 100%);
+  }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: clamp(20px, 2vw, 1.3rem);
+    color: var(--bg-color-400);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scrollbar-width: none;
+    user-select: none;
+  }
+  *::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  a.sidebar-link:link { text-decoration: none; }a.sidebar-link:visited { text-decoration: none; }a.sidebar-link:hover { text-decoration: none; }a.sidebar-link:active { text-decoration: none; }
+  img {
+    margin-top: .5rem;
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    border-radius: 1vw;
+  }
+  p {text-indent: min(4rem, 5vw);}
+  hr {border-color: var(--bg-color-400);margin-top: 2rem;margin-bottom: 2rem;}
+  body {background-color: var(--bg-color-50);}
+
+  #navbar {
+    background-color: var(--bg-color-100);
+    height: max(5vh, 64px);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 100;
+  }
+  #site-title {
+    font-size: min(5vw, 2rem);
+    margin-left: min(5vw, 2rem);
+  }
+
+  #sidebar-button-checkbox {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+  }
+  #sidebar-button-container {
+    height: 100%;
+    width: calc(max(5vh, 64px) * 1.2);
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 100;
+  }
+  .sidebar-button-bar {
+    background-color: var(--bg-color-200);
+    height: calc(max(5vh, 64px)/7);
+    width: calc(max(5vh, 64px) * 0.8);
+    border-radius:  calc(max(5vh, 64px)/14);
+    position: absolute;
+    right: calc(max(5vh, 64px)*0.2);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0,-0.3,.7,1);
+  }
+  .sidebar-button-bar-1 {top: calc(max(5vh, 64px)/7);}
+  .sidebar-button-bar-2 {top: calc(max(5vh, 64px)/7*3);}
+  .sidebar-button-bar-3 {top: calc(max(5vh, 64px)/7*5);}
+  #sidebar-button-checkbox:hover ~ .sidebar-button-bar{background-color: var(--bg-color-300);}
+  #sidebar-button-checkbox:hover ~ .sidebar-button-bar-1 {width: calc(max(5vh, 64px) * 0.9);}
+  #sidebar-button-checkbox:hover ~ .sidebar-button-bar-2 {width: calc(max(5vh, 64px) * 0.4);}
+  #sidebar-button-checkbox:hover ~ .sidebar-button-bar-3 {width: calc(max(5vh, 64px) * 0.65);}
+  #sidebar-button-checkbox:checked ~ .sidebar-button-bar-1 {
+    rotate: -45deg;
+    top: calc(max(5vh, 64px)/7*3);
+    height: calc(max(5vh, 64px)/7);
+    width: calc(max(5vh, 64px) * 0.8);
+  }
+  #sidebar-button-checkbox:checked ~ .sidebar-button-bar-2 {
+    height: max(5vh, 64px);
+    width: calc(max(5vh, 64px)/14);
+    right: calc(max(20vw, 320px) - calc(max(5vh, 64px)/14));
+    top: 0;
+    border-radius: 0;
+    background-color: var(--bg-color-300);
+  }
+  #sidebar-button-checkbox:checked ~ .sidebar-button-bar-3 {
+    rotate: 45deg;
+    top: calc(max(5vh, 64px)/7*3);
+    height: calc(max(5vh, 64px)/7);
+    width: calc(max(5vh, 64px) * 0.8);
+  }
+  #sidebar-button-checkbox:checked ~ #sidebar {right: 0;}
+  #sidebar {
+    top: max(5vh, 64px);
+    right: min(-400vw, -400vh);
+    width: max(20vw, 320px);
+    height:  calc(100vh - max(5vh, 64px));
+    position: fixed;
+    background-color: var(--bg-color-100);
+    z-index: 1;
+    transition-duration: 150ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-left: calc(max(5vh, 64px)/12) solid var(--bg-color-300);
+    transition-timing-function: cubic-bezier(0,-0.3,.7,1);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .sidebar-link-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 100%;
+    text-align: end;
+    color: var(--bg-color-500);
+  }
+  .sidebar-link {
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    transition-duration: 150ms;
+    border-radius: max(1vh, 16px);
+  }
+  .sidebar-link:hover {
+    color: var(--bg-color-600);
+    background-color: var(--bg-color-200);
+  }
+  .page { height: max(1vh, 64px); }
+  .subpage { height: max(.2vh, 32px); }
+  .page-current { height: max(1vh, 64px); }
+  .page::before { content: "->"; }
+  .subpage::before { content: "•"; }
+  .page-current::before { content: "►"; }
+
+  #wrapper {
+    background-color: transparent;
+    height: calc(100vh - max(5vh, 64px));
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: -10;
+  }
+
+  #content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #text-grid {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  .grid-fill-all {grid-column-start: 1;grid-column-end: 4;}.grid-fill-12 {grid-column-start: 1;grid-column-end: 3;}.grid-fill-23 {grid-column-start: 2;grid-column-end: 4}.grid-fill-3 {grid-column-start: 3;grid-column-end: 4;}.grid-fill-2 {grid-column-start: 2;grid-column-end: 3;}.grid-fill-1 {grid-column-start: 1;grid-column-end: 2;}
+  .paragraph-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .paragraph-flavour-text {
+    text-indent: 0;
+    left: min(6rem, 10vw);
+    width: calc(100% - min(6rem, 10vw));
+    font-size: 1rem;
+    position: relative;
+    color: var(--bg-color-300);
+  }
+
+  #fancy-title {
+    width: max(60vw, 450px);
+    aspect-ratio: 3/1;
+    background: var(--bg-gradient-50) repeat;
+    background-size: 200%;
+    padding: 2px;
+    animation: forwards infinite 5s fancy-title linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 8px;
+    z-index: -1;
+  }
+  #grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(4, 1fr)/repeat(12, 1fr);
+    row-gap: .2vw;
+    column-gap: .2vw;
+    z-index: -1;
+  }
+  .grid-fill {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color-50);
+    border-radius: .2rem;
+  }
+  #fancy-title-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: max(12vw, 90px);
+    font-weight: bold;
+    background:  var(--bg-gradient) repeat;
+    background-size: 200%;
+    animation: forwards infinite 5s fancy-title linear;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+  }
+
+  #footer {
+    background-color: var(--bg-color-100);
+    height: max(15vh, 128px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  @keyframes fancy-title {0% {background-position: 0 center;} 100% {background-position: 200% center;}}
+
+  @media (max-width: 1000px) {
+    #text-grid {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+    }
+    img {
+      scale: 75%;
+      z-index: -1;
+    }
+    .sidebar {
+      width: max(60vw, 320px);
+    }
+  }
+
+  #gdgraph-antena,#gdgraph-pegs{background-color:#fff;width:1.6rem}#gdgraph{position:absolute;bottom:1.5vh;right:2vh;display:flex;flex-direction:column;justify-content:center;align-items:center;user-select:none;pointer-events:none}#gdgraph-container{background-color:transparent;outline:white double .12rem;border-radius:.28rem;height:1.6rem;width:2.4rem;position:relative;background-image:linear-gradient(transparent 0,rgba(255,255,255,.25) .5%,transparent 1%);background-size:400% 400%;animation:10s linear infinite forwards crt-line;display:flex;flex-direction:column;justify-content:center;align-items:center;}#gdgraph-antena{height:.8rem;margin-bottom:.1rem;clip-path:polygon(45% 100%,45% 90%,48% 90%,5% 10%,0% 10%,0 0,5% 0,5% 5%,50% 80%,70% 60%,90% 80%,95% 80%,95% 90%,90% 90%,90% 85%,70% 65%,52.5% 90%,55% 90%,55% 100%)}#gdgraph-pegs{height:.08rem;margin-top:.12rem;clip-path:polygon(5% 0,6% 100%,19% 100%,20% 0,80% 0,81% 100%,94% 100%,95% 0)}#gdgraph-text{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;color:#fff;position:absolute;width:100%;height:100%;align-self:center;text-shadow:.08rem .02rem 0 rgba(250,40,0,.75),-.08rem -.02rem 0 rgba(0,190,250,.75);animation:3s infinite forwards glitch-color-pulse,.15s infinite flicker;display:flex;flex-direction:column;justify-content:center;align-items:center;}#gdgraph-text .top{width:100%; height:100%;display:flex;justify-content:center;align-items:center;font-size: 100%;color: white;position:absolute;clip-path:polygon(-10% 0%,110% 0%,110% 35%,-10% 35%);animation:4s linear infinite forwards glitch-text-top}#gdgraph-text .mid{width:100%; height:100%;display:flex;justify-content:center;align-items:center;font-size: 100%;color: white;position:absolute;clip-path:polygon(-10% 35%,110% 35%,110% 40%,-10% 40%);animation:4s linear infinite forwards glitch-text-mid}#gdgraph-text .bot{width:100%; height:100%;display:flex;justify-content:center;align-items:center;font-size: 100%;color: white;position:absolute;clip-path:polygon(-10% 100%,110% 100%,110% 40%,-10% 40%);animation:4s linear infinite forwards glitch-text-bot}.crt::before{border-radius:.28rem;content:" ";display:block;position:absolute;top:0;left:0;bottom:0;right:0;background:linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,.25) 50%),linear-gradient(90deg,rgba(255,0,0,.06),rgba(0,255,0,.02),rgba(0,0,255,.06));background-size:100% 3px,5px 100%;pointer-events:none}@keyframes glitch-color-pulse{0%,100%,29%,32%{text-shadow:.08rem .02rem 0 rgba(250,40,0,.75),-.08rem -.02rem 0 rgba(0,190,250,.75)}30%,33%{text-shadow:0 .02rem 0 rgba(250,40,0,.75),0 -.02rem 0 rgba(0,190,250,.75)}31%,34%{text-shadow:.084rem .02rem 0 rgba(250,40,0,.75),-.084rem -.02rem 0 rgba(0,190,250,.75)}80%{text-shadow:.1 .02rem 0 rgba(250,40,0,.75),-.1 -.02rem 0 rgba(0,190,250,.75)}}@keyframes flicker{0%,100%{opacity:100%}50%{opacity:90%}}@keyframes crt-line{0%{background-position:0 200%}100%{background-position:0 100%}}@keyframes glitch-text-top{0%,100%,86%,9%{left:0;top:0}5%,7%{left:5%}6%,8%{left:8%}87%,89%{left:20%;top:-15%}88%,90%,91%{left:0;top:0}}@keyframes glitch-text-mid{0%,100%,29%,34%,86%{left:0;top:0}30%,32%{left:5%}31%,33%{left:10%}60%,62%,80%{opacity:100%}61%,63%,79%{opacity:0%}87%,89%{left:20%;top:-15%}88%,90%,91%{left:0;top:0}}@keyframes glitch-text-bot{0%,100%,19%,24%,86%{left:0;top:0}20%,22%{left:10%}21%,23%{left:15%}87%,89%{left:20%;top:-15%}88%,90%,91%{left:0;top:0}}
+</style>
+
+</html>
