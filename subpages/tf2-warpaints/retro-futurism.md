@@ -10,4 +10,5 @@ Often nowadays posters of that nature are depicted with toned down Orange, Light
 ![](https://raw.githubusercontent.com/GibberishDev/GibberishDev.github.io/main/res/images/warpaint-colors-0001.png)<br>(llittle marks at the corner of color panel mean color was taken directly from tf2)
 ### Patterns
 As for patterns night starry sky with occasional falling star may work as less patterned almost solid color dropback.  
-Main pattern it is musch harder to think of something that will not look like color vomit and be eye grabbing too much. Maybe some "martian" hillside pattern with simpltistic patter of triangle mountains layered on top of another (kinda like paralax)
+Main pattern it is musch harder to think of something that will not look like color vomit and be eye grabbing too much. Maybe some "martian" hillside pattern with simpltistic patter of triangle mountains layered on top of another (kinda like paralax).  
+Light pattern maybe can represent hull of the rocket.
